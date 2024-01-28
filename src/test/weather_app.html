@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <body class="bg-indigo-400 min-h-screen flex justify-center items-center ">
+      <div class="bg-slate-200 p-5 rounded-lg shadow-lg">
+        <div class="mb-4">
+             <input type="text" placeholder="Enter city..." id="city-name" class="p-1 rounded-md focus:outline-none border border-gray-300">
+             <button onclick="getWeather()" class="bg-indigo-600 px-2 py1 rounded-md text-white text-lg">Search</button>
+        </div>
+        <div id="weatherInfo"></div>
+      </div>
+      <script src="weather_app.js"></script>  
+    </body>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../dist/output.css">
+  <title>To Do App</title>
+</head>
+<body class = 'bg-indigo-300 min-h-56 flex justify-center items-center'>
+   <div class="bg-slate-200 rounded-md p-6 mt-40">
+    <h2 class="text-center font-[poppins] mb-6 text-xl">To-Do App</h2>
+    
+    <div class="relative flex justify-center mb-3">
+      <input type="text" id="input" placeholder="Enter task..." class=" pl-2 border border-gray-400 focus:outline-none rounded-sm">
+      <button onclick="addTask()" class="text-white bg-blue-600 hover:bg-blue-800 py-1 px-2 rounded-sm font-sans">Add</button>
+    </div>
+    <div>
+      <ul id="list"></ul>
+    </div>
+   </div>
+
+  <script src="to_do_app.js"></script>
+</body>
+</html>

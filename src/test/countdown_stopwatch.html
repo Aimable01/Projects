@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <title>Stop Watch and Count-down timer</title>
+</head>
+<body class="bg-indigo-600 min-h-screen flex justify-center items-center">
+    <div class="bg-slate-300  p-7 rounded-lg flex gap-5">
+        <div class="m">
+            <p class="text-xl font-semibold text-center mb-5">Stop Watch</p>
+            <p class="font-medium text-2xl text-blue-700 mb-3" id="display">00:00:00:00</p>
+            <button class="bg-indigo-600 text-white py-1 px-2 rounded-md shadow-lg" onclick="start()">Start</button>
+            <button class="bg-indigo-600 text-white py-1 px-2 rounded-md shadow-lg" onclick="stop()">Stop</button>
+            <button class="bg-indigo-600 text-white py-1 px-2 rounded-md shadow-lg" onclick="reset()">Reset</button>
+        </div>
+        <div class="border-l-2 border-gray-700 p-3">
+            <p class="text-xl font-semibold text-center mb-3">Count Down Timer</p>
+            <p class="text-gray-500">Please enter the time in minutes</p>
+            <input type="number" id="input" min="1" class="w-16 focus:outline-none border border-gray-400 rounded-md p-1">
+            <button class="bg-indigo-600 text-white py-1 px-2 rounded-md shadow-lg" onclick="startCountDown()">Start</button>
+            <p class="font-medium text-2xl text-blue-700" id="count-down-display"></p>
+            <p id="error-message" class="text-red-500 m-3"></p>
+            <p id="finished-message" class="text-green-600 text-xl m-4"></p>
+        </div>
+    </div>
+
+    <script src="countdown_stopwatch.js"></script>
+</body>
+</html>

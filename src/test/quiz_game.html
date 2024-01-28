@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../dist/output.css">
+        <title>Quiz Game</title>
+    </head>
+    <body class="bg-indigo-600 min-h-screen flex justify-center items-center">
+        <div class="bg-slate-300 rounded-lg shadow-lg p-5">
+          <h3 class="text-center text-2xl">Quiz Game</h3>
+          <div class="m-3">
+            <div id="question"></div>
+            <ul id="choices"class='ml-3'></ul>
+          </div>
+          <div>
+            <button onclick="checkAnswer()" class="bg-indigo-700 text-white py-1 px-2 rounded-md m-1 text-center">Next</button>
+            <p id="score"></p>
+            <button onclick="reset()" id="reset" class="bg-indigo-700 text-white py-1 px-2 rounded-md m-1 text-center">Restart</button>
+          </div>
+        </div>
+        <script src="quiz_game.js"></script>
+    </body>
+</html>
